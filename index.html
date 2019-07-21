@@ -22,8 +22,8 @@
 	</div>
 	<form action="">
 		<button type="button" class="btn btn-primary" id="plus1">+1</button>
-		<button type="button" class="btn btn-primary" id="plus2" >+2</button>
-		<button type="button" class="btn btn-primary" id="plus3">+3</button>
+		<button type="button" class="btn btn-primary" id="plus3" >+3</button>
+		<button type="button" class="btn btn-primary" id="plus7">+7</button>
 	</form>
 
 	<script src="./js/jquery-3.4.1.min.js"></script>
@@ -38,15 +38,15 @@
     		event.preventDefault();
     	});
 
-    	$('#plus2').click(function(event) {
-    		progressWidth+=2;
+    	$('#plus3').click(function(event) {
+    		progressWidth+=3;
     		$('.progress-bar').width(progressWidth+"%");
     		reloadTest();
     		event.preventDefault();
     	});
 
-    	$('#plus3').click(function(event) {
-    		progressWidth+=3;
+    	$('#plus7').click(function(event) {
+    		progressWidth+=7;
     		$('.progress-bar').width(progressWidth+"%");
     		reloadTest();
     		event.preventDefault();
